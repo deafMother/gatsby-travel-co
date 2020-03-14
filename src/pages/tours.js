@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
+import Tours from "../components/Tours/Tours"
 
 export default class tours extends Component {
   render() {
@@ -12,6 +13,7 @@ export default class tours extends Component {
           <StyledHero
             image={this.props.data.defaultBcg.childImageSharp.fluid}
           ></StyledHero>
+          <Tours />
         </Layout>
       </>
     )
