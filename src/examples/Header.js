@@ -13,7 +13,6 @@ const Header = () => {
           title
           description
           author
-          data
         }
       }
     }

@@ -10,15 +10,18 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Go To Eplore",
+    title: "Go To Explore",
     description: "Explore And Descover The Adventure",
     author: "Sarovar",
-    data: [1, 2, 3],
+    twitterUserName: "@anonymous_user",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://goexplore-gatsby.netlify.com",
   },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-react-helmet`,
 
     {
       resolve: `gatsby-plugin-styled-components`,
