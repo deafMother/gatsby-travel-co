@@ -5,12 +5,14 @@ import { graphql } from "gatsby"
 import StyledHero from "../components/StyledHero"
 
 import Contact from "../components/Contact/Contact"
+import SEO from "../components/SEO"
 
 export default function contact({ data }) {
   return (
     <>
       {" "}
       <Layout>
+        <SEO title="Contact" />
         hello from contact
         <StyledHero image={data.defaultBcg.childImageSharp.fluid}></StyledHero>
         <Contact />
